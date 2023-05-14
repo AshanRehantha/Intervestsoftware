@@ -1,5 +1,5 @@
 "use strict";
-import { auth } from "../_constants";
+
 import { authConstants } from "../_constants/auth.constants";
 
 export const authLoginRequest = (payload) => {
