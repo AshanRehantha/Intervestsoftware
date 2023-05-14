@@ -1,0 +1,112 @@
+html ,body{
+    margin: 0;
+    padding: 0;
+    @include fnt-archivo-regular(100, 1rem);
+    overflow-x: hidden;
+
+}
+
+.loaderWaper{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: +10000;
+    background: rgba(243, 242, 242, 0.1);
+
+    .loading{
+        border: 5px solid #3498db;
+        border-radius: 50%;
+        border-top: 5px solid #3498db;
+        width: 40px;
+        height: 40px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+        margin: 0 auto;
+        top: 40%;
+        position: relative;
+
+    }
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+}
+
+.inte-button{
+   padding: .5em;
+   width: 100%;
+   border-radius: 0 !important;
+}
+
+.top-ribbons {
+   width: 100%;
+   display: flex;
+   margin-top: 25px;
+   margin-bottom: 3px;
+
+   &__search-bar{
+      flex-grow: 5
+   }
+   &__notify{
+      flex-grow: 2
+   }
+
+}
+
+
+
+//breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1199px;
+$breakpoint-xxl: 1400px;
+
+@mixin desktop {
+    @media (min-width: $breakpoint-lg) { @content; }
+ }
+
+ @mixin min-width-1200 {
+    @media (min-width: $breakpoint-xl) { @content; }
+ }
+
+ @mixin max-width-992 {
+    @media (max-width: $breakpoint-lg) { @content; }
+ }
+
+ @mixin max-width-1200 {
+    @media (max-width: $breakpoint-xl) { @content; }
+ }
+
+ @mixin tablet {
+    @media (max-width: $breakpoint-md) { @content; }
+ }
+
+ @mixin mobile {
+    @media (max-width: $breakpoint-sm) { @content; }
+ }
+
+ @mixin min-width-768 {
+    @media (min-width: $breakpoint-md) { @content; }
+ }
+
+ .fotter{
+   width: 100%;
+   height: auto;
+   border-top: 1px;
+   border-top-style: solid;
+   border-top-color: black;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   text-align: right;
+   padding-right: 10px;
+   @include mobile {
+      text-align: center;
+   }
+}

@@ -1,0 +1,151 @@
+.inter-main-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    &__nav-menu {
+        flex-grow: 2
+    }
+
+    &__main-row {
+        flex-grow: 4
+    }
+
+    &__top-ribbon{
+        width: 98%;
+        max-height: 100px;
+        height: 65px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: $bgSearchInputGrey;
+    }
+}
+.inter-notify{
+    display: inline-flex;
+    &__icon{
+        font-size: 30px;
+    }
+    &__profile{
+        display: inline-flex;
+        position: inherit;
+        padding-top: 8px;
+        padding-left: 20px;
+    }
+    &__profile-image{
+        position: relative;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        left: 20px;
+        top: -10px;
+    }
+}
+.dashboard-wapper{
+    height: 100vh;
+    width: 100%;
+    background-color: $bgSearchInputGrey;
+
+    &__card-margin{
+        margin-top: 15px;
+    }
+    
+    &__details-card{
+        padding-top: 20px;
+        width: 95%;
+    }
+
+    &__left_canva{
+        padding: 20px 40px;
+        width: 70%;
+        float: left;
+        height: auto;
+        @include mobile {
+            width: 100%; 
+        }
+        &__welcome-card{
+          border-radius: 5px;
+          background-color: $labelSuccessColor;
+          width: 100%;
+          height: 100%;
+          padding: 30px;
+
+          &__details{
+            margin-top: 20px;
+            float: left;
+            width: 60%;
+            height: auto;
+
+            p{
+                text-align: justify;
+            }
+          }
+        }
+        &__grap_canva{
+            margin-top: 30px;
+            height: 200px;
+
+            &__grap_card{
+                background-color: $white;
+                width: 100%;
+                height: 150px;
+                margin: 8px;
+                border-radius: 15px;
+
+                &__details{
+                    padding: 20px;
+
+                    &__header{
+                        font-size: 15px;
+                        padding-bottom: 10px;
+                    }
+                    &__value{
+                        font-size: 25px;
+                        font-weight: 600;
+                    }
+
+                }
+                &__chart{
+                    margin-top: 20px;
+                    @include mobile {
+                        position: absolute;
+                    }
+                }
+            }
+          }
+          &__fullChart{
+            margin-top: 20px;
+            width: 100%;
+            height: 300px;
+            background-color: $white;
+            border-radius: 15px;
+            padding: 20px;
+          }
+    }
+
+    &__right_conva{
+        &__top_grap{
+            width: 100%;
+            height: 250px;
+            background-color: $white;
+            border-radius: 15px;
+            margin-top: 5px;
+            padding: 20px;
+        }
+        &__middle_grap{
+            width: 100%;
+            height: 150px;
+            background-color: $white;
+            border-radius: 15px;
+            margin-top: 35px;
+        }
+        &__last_pie_grap{
+            width: 100%;
+            height: 300px;
+            background-color: $white;
+            border-radius: 15px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.login-wapper{
+    width: 100%;
+    height: auto;
+}
+.left-canvas{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    @include mobile {
+        width: 100%;
+    }
+}
+.right-canvas{
+    float: right;
+    width: 50%;
+    margin-top: 8%;
+    &__image{
+        width: 400px;
+        height: 400px;
+    }
+    @include mobile {
+        width: 100%;
+        margin-top: 0%;
+        &__image{
+            width: 350px;
+            height: 350px;
+        }
+    }
+}
+.login-canvas{
+    width: 70%;
+    padding: 2em;
+    margin: 20% 10%;
+
+    &__errorMessage{
+        color: $redColor;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $violet;
+    }
+
+    @include mobile {
+        width: 85%;
+        padding: 0em;
+    }
+}
+.inter-auth{
+    &__login{
+        margin: $valStdHrMarginXs;
+
+        &__form{
+            &__separator{
+                position: relative;
+                margin: 25px 0;
+            }
+        }
+    }
+}
+.inter-auth-login-checkbox{
+    display: inline-flex;
+    &__text{
+        margin-left: 1em;
+    }
+}

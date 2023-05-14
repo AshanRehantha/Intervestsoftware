@@ -1,0 +1,18 @@
+.inter-search-input {
+    position: relative;
+
+    &__ico {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        bottom: 8px;
+    }
+
+    .form-control {
+        border-radius: 25px;
+        padding-left: 32px;
+        background: $bgSearchInputGrey;
+        width: 50%;
+        @include fnt-archivo-regular(500, 0.813rem);
+    }
+}

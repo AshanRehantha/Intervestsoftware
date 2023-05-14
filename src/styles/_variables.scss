@@ -1,0 +1,210 @@
+//fonts
+@font-face {
+    font-family: "archivo-bold";
+    src: url("fonts/Archivo-Bold/Archivo-Bold.eot");
+    src: url("./fonts/Archivo-Bold/Archivo-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Archivo-Bold/Archivo-Bold.woff") format("font-woff"),
+    url("./fonts/Archivo-Bold/Archivo-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "archivo-semibold";
+    src: url("fonts/Archivo-SemiBold/Archivo-SemiBold.eot");
+    src: url("./fonts/Archivo-SemiBold/Archivo-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Archivo-SemiBold/Archivo-SemiBold.woff") format("font-woff"),
+    url("./fonts/Archivo-SemiBold/Archivo-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "archivo-regular";
+    src: url("fonts/Archivo-Regular/Archivo-Regular.eot");
+    src: url("./fonts/Archivo-Regular/Archivo-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Archivo-Regular/Archivo-Regular.woff") format("font-woff"),
+    url("./fonts/Archivo-Regular/Archivo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "archivo-medium";
+    src: url("fonts/Archivo-Medium/Archivo-Medium.eot");
+    src: url("./fonts/Archivo-Medium/Archivo-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Archivo-Medium/Archivo-Medium.woff") format("font-woff"),
+    url("./fonts/Archivo-Medium/Archivo-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "archivo-light";
+    src: url("fonts/Archivo-Light/Archivo-Light.eot");
+    src: url("./fonts/Archivo-Light/Archivo-Light.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Archivo-Light/Archivo-Light.woff") format("font-woff"),
+    url("./fonts/Archivo-Light/Archivo-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "archivo-thin";
+    src: url("fonts/Archivo-Thin/Archivo-Thin.eot");
+    src: url("./fonts/Archivo-Thin/Archivo-Thin.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Archivo-Thin/Archivo-Thin.woff") format("font-woff"),
+    url("./fonts/Archivo-Thin/Archivo-Thin.ttf") format("truetype");
+}
+
+$fnt-archivo-thin: "archivo-thin";
+$fnt-archivo-light: "archivo-light";
+$fnt-archivo-regular: "archivo-regular";
+$fnt-archivo-medium: "archivo-medimum";
+$fnt-archivo-semibold: "archivo-semibold";
+$fnt-archivo-bold: "archivo-bold";
+
+@mixin fnt-archivo-thin($weight, $size) {
+    font-family: $fnt-archivo-thin;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+@mixin fnt-archivo-light($weight, $size) {
+    font-family: $fnt-archivo-light, sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+@mixin fnt-archivo-regular($weight, $size) {
+    font-family: $fnt-archivo-regular, sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+@mixin fnt-archivo-medium($weight, $size) {
+    font-family: $fnt-archivo-medium, sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+@mixin fnt-archivo-semibold($weight, $size) {
+    font-family: $fnt-archivo-semibold, sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+@mixin fnt-archivo-bold($weight, $size) {
+    font-family: $fnt-archivo-bold, sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+//colors
+$primaryColor: #0061AF;
+$secondaryColor: #000000;
+$greyColor: #979797;
+$darkColor: #231F20;
+$lightGreyColor: #7F83A7;
+$whiteColor: #ffffff;
+$paragraphColor: #818181;
+$redColor: #F53E3E;
+$subLinksColor: #878A9E;
+$borderColor: #D1D4E8;
+$boxbgColor: #F8F8F8;
+$shadowColor: #e8e8e8;
+$loginBgColor:#F8FCFF;
+$activeGreenColor:#2FCF6F;
+$txtSwitchBlue: #002742;
+$tabsLinkColor:#176EB4;
+$borderStatusBlue: #BADFFD;
+$borderSelectSeparatorBlue: #DFF0FF;
+$borderListItemLightBlue: #CADAE9;
+$btnDisabled: #CADAE9;
+$borderInputLightBlue: #D1E9FF;
+$bgForgotPwStatus: #F8FCFF;
+$bgStatusLightBlue: #EBF6FF;
+$txtDarkGrey: #404553;
+$txtModalMsgGrey: #4F4F4F;
+$txtInputLabelGrey: #5F627F;
+$txtInputPlaceHolderGrey: #989898;
+$bgSwitchGrey: #EFF3F7;
+$bgDrawerGrey: #EFEFEF;
+$bgModalTbGrey: #F5F7F8;
+$bgSearchInputGrey: #F0F4F7;
+$bgStatusErrorLightRed: #FFF0DB;
+$leftNavTextColor:#B4DDFF;
+$labelSuccessColor:#2FCF6F;
+$labelFailedColor:#C75151;
+$labelCanceledColor:#000000;
+$lightBlueColor:#2180CC;
+$borderLineColor:#F2F2F2;
+$borderRadiusColor:#E1E3EF;
+$textGreyColor:#3F3D56;
+$leftNavTextColor:#B4DDFF;
+$sectionBoxHoverColor:#fbfafa;
+$landingBgcolor:#F9F9F9;
+$SideScrollBarColor:#125890;
+$SideScrollBarHover:#0f468e;
+$innerTopBg:#EBF6FF;
+$innerOrangeColor:#F7A22B;
+$dangerColor:#F53E3E;
+$stoppedColor:#F53E3E;
+$landingBgColor:#F4FAFF;
+$scrollerBlue: #B8DCFB;
+$bgNotificationScrollBlue: #B8DCFB;
+$firefoxScroll:#ecebeb;
+$schedulePayBg:#F6FBFF;
+$recurringBg:#FFEBCE;
+$switchActive:#37E83E;
+$violet:#7F00FF;
+$white:#FFFFFFFF;
+
+//values
+$valStdGutter: 25px;
+$valStdHrMarginXs: 0 $valStdGutter;
+$valStdHrMarginLg: $valStdGutter auto;
+$valAuthFormWidth: 360px;
+$valStdBorderRadius: 15px;
+
+//transition and effects
+$trsDefault: all 200ms ease;
+$effectDefaultHover: 0 4px 7px rgba(0, 0, 0, 0.13);
+
+//bootstrap theme overrides
+$enable-validation-icons: false;
+$theme-colors: (
+    "primary": $primaryColor,
+    "secondary": $greyColor,
+    "danger": $dangerColor,
+);
+
+//breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1199px;
+$breakpoint-xxl: 1400px;
+
+
+@mixin desktop {
+    @media (min-width: $breakpoint-lg) { @content; }
+ }
+
+ @mixin min-width-1200 {
+    @media (min-width: $breakpoint-xl) { @content; }
+ }
+
+ @mixin max-width-992 {
+    @media (max-width: $breakpoint-lg) { @content; }
+ }
+
+ @mixin max-width-1200 {
+    @media (max-width: $breakpoint-xl) { @content; }
+ }
+
+ @mixin tablet {
+    @media (max-width: $breakpoint-md) { @content; }
+ }
+
+ @mixin mobile {
+    @media (max-width: $breakpoint-sm) { @content; }
+ }
+
+ @mixin min-width-768 {
+    @media (min-width: $breakpoint-md) { @content; }
+ }
+
+
+ 
+
