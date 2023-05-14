@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Redirect, withRouter } from "react-router";
-import { isUserLoggin } from "../_helper/auth.helper";
+import { isUserLoggin, validateUUID } from "../_helper/auth.helper";
 
 export const PrivateRoute = withRouter(({ render: render, ...rest }) => {
     return (

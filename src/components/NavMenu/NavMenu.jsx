@@ -23,6 +23,7 @@ const NavMenu = () => {
             <li onClick={() => {
                 Cookies.remove('inter_ib_login');
                 window.location.reload(true);
+                Cookies.remove('uuid');
             }}><AiOutlineLogout/> Log out</li>
         </ul>
     </nav>

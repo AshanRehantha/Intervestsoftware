@@ -5,26 +5,21 @@ import UiInputs, { UiLoginCheckBox } from '../common/UiInput';
 import { UiButtonPrimary } from '../common/UIButtons';
 import { useDispatch } from "react-redux";
 import { authLoginComplete } from '../../_redux/_actions/auth.actions';
-import {v4 as uuidv4} from 'uuid';
+import {v1 as uuid} from "uuid"; 
 
 const LoginForm = () => {
     const [errorMessage, setErrorMessage] = useState(null);
     const actionDispatch = useDispatch();
     const submit = async (values) => {
-        let myuuid = uuidv4();
         if(values.username === 'admin' && values.password === 'admin'){
             Cookies.set("inter_ib_login", true);
-            //Cookies.set('uuid', uuid());
-
-            console.log(uuid());
-
+            Cookies.set('uuid', uuid())
             window.location.reload(true);
             const user = {
                 username:'Matt Appleyard',
                 userType:'Admin'
             }
             actionDispatch(authLoginComplete(user));
-            
         }else {
             setErrorMessage(true)
         }

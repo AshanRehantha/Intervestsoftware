@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { lineChartComplete, lineChartRequest } from '../../_redux/_actions';
 import axios from 'axios';
 import { LineChart, Line, BarChart, Bar, PieChart, Pie } from 'recharts';
+import {v1 as uuid} from "uuid"; 
 
 const DashBoardWrapper = () => {
   const data = {

@@ -2,7 +2,7 @@
 
 import React, { Fragment, useEffect } from "react";
 import { Route, Switch, Redirect } from "react-router";
-import { isUserLoggin } from "../_helper/auth.helper";
+import { isUserLoggin, validateUUID } from "../_helper/auth.helper";
 import Login from "../components/Login/Login";
 import { PrivateRoute } from "./PrivateRoute";
 import RootPage from "../components/RootPage";
